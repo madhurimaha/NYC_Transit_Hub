@@ -32,6 +32,11 @@ protobuf.load(GTFS_PROTO_PATH, function(err, root) {
     });
 });
 
+app.get('/', (req, res) => {
+    res.send('MTA NYC Transit Hub Application is running. Access /transit-data to fetch real-time transit data.');
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
