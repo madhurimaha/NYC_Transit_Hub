@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit Hub | Sign Up</title>
+    <!-- Firebase JavaScript SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js"></script>
+
+    <!-- Font Family -->    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Style Block -->
+    <style>
+    body {
+    font-family: "Sofia", sans-serif;
+    }
+    </style>
+    <!-- Replace with your Firebase config -->
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+
+<body>
+
+<img src="mta_logo.png" alt="MTA Logo" width="500">
+
+<div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <h2 style="text-align:center">Sign Up With</h2>
+        <div class="vl"></div>
+  
+        <div class="col">
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i> Sign Up with Facebook
+          </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i> Sign Up with Twitter
+          </a>
+          <a href="#" class="google btn">
+            <i class="fa fa-google fa-fw"></i> Sign Up with Google+
+          </a>
+        </div>
+  
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Or sign in manually:</p>
+          </div>
+  
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="re-password" name="re-password" placeholder="Re-enter Password" required>
+          <input type="submit" value="Signup">
+        </div>
+  
+      </div>
+    </form>
+  </div>
+  
+  <div class="bottom-container">
+    <div class="row">
+        <p style="color: white; font-family: 'Poppins', sans-serif;"> Already have an account? </p>
+        <a href="signin.html" style="color:white" class="btn">Sign In</a>
+
+    </div>
+  </div>
+
+<script>
+    const emailPasswordForm = document.getElementById('emailPasswordForm');
+    const googleSignInButton = document.getElementById('googleSignIn');
+
+    // Email/Password Sign In/Sign Up
+    emailPasswordForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = emailPasswordForm['email'].value;
+        const password = emailPasswordForm['password'].value;
+        firebase.auth().signInWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                console.log('User signed in:', user);
+            })
+            .catch((error) => {
+                // Handle errors
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.error('Error:', errorMessage);
+            });
+    });
+
+    // Google Sign In
+    googleSignInButton.addEventListener('click', () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider)
+            .then((result) => {
+                // Signed in with Google
+                const user = result.user;
+                console.log('User signed in with Google:', user);
+            })
+            .catch((error) => {
+                // Handle errors
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.error('Error:', errorMessage);
+            });
+    });
+</script>
+
+</body>
+</html>
