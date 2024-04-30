@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html {
     height: 100%;
     margin: 0;
@@ -243,3 +244,250 @@ body, html {
 }
 /* Additional styles for buttons, text, images, etc. */
 /* ... */
+=======
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px auto; /* Fixed sidebar width and the rest for content */
+    height: 100vh;
+}
+
+.sidebar {
+    background: white; /* Dark blue color for the sidebar */
+    color: white; /* Text color for the sidebar */
+    padding: 20px;
+    padding-left: 0; /* Remove padding on the left */
+    display: flex;
+    flex-direction: column; /* Stack sidebar items vertically */
+    position: relative; /* For absolute positioning of the footer */
+}
+
+.logo {
+    padding-left: 25px;
+    max-width: 100%; /* Makes sure logo is not bigger than the sidebar */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes bottom space under the image */
+    margin-bottom: 10px; /* Adjust space between logo and nav links */
+}
+
+.sidebar-nav ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.sidebar-nav {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    padding-left: 20px;
+    list-style-type: none; /* Remove bullet points */
+}
+
+.sidebar-nav li {
+    position: relative; /* Set relative for positioning pseudo-elements */
+    padding-left: 40px; /* Provide space for the bullet image */
+}
+
+.sidebar-nav a {
+    color: black;
+    text-decoration: none;
+    display: block; /* Make the link fill the li for easier clicking */
+    padding: 10px 20px;
+}
+
+
+.sidebar-nav a.active {
+    background-color: #8C52FF; /* Highlight color for active link */
+    display: block; /* Make the <a> element block to occupy the full width */
+    padding: 10px 15px; /* Add padding to make the highlight larger */
+    border-radius: 15px; /* Soft rounded corners */
+    color: white; /* Text color for active link */
+    margin-left: -20px; /* Negative margin to offset the padding on the left */
+    padding-left: 40px; /* Add the sidebar's padding to the link's existing padding */
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align the items if needed */
+    padding: 0; /* Adjust or remove padding as needed */
+}
+
+.sidebar-btn {
+    color: #2c3e50; /* Button text color, adjust as needed */
+    padding: 10px 20px; /* Padding inside the buttons */
+    border: none;
+    border-radius: 4px; /* Rounded corners for the buttons, if desired */
+    margin-bottom: 10px; /* Space between the buttons */
+    width: 100%; /* Full width of the container */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sidebar-btn:last-child {
+    margin-bottom: 0;
+}
+
+.content {
+    background: white; /* Light grey color for content area */
+    padding: 20px; /* Add padding */
+}
+
+.header {
+    background: #dcdfe0; /* Lighter grey for header */
+    margin: 0 0 20px 0; /* Added margin to the bottom */
+    padding: 20px;
+    font-size: 24px; /* Larger font size for the header */
+    border-radius: 4px; /* Rounded corners for the header */
+}
+
+.main-info {
+    background: #8C52FF; /* Background same as content to blend in */
+    border-radius: 4px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin to the bottom */
+    color: white;
+    
+}
+
+.learn-more-btn {
+    display: inline-block; /* Inline block level element */
+    padding: 10px 25px; /* Adequate padding around the text */
+    background-color: white; /* White background */
+    color: #8C52FF; /* Purple text color, as per your design */
+    text-decoration: none; /* No underline */
+    border-radius: 20px; /* Rounded edges */
+    border: none; /* Purple border to match the text color */
+    font-weight: bold; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for depth */
+}
+
+.learn-more-btn:hover {
+    background-color: #8C52FF; /* Background color on hover */
+    color: white ; /* Text color on hover */
+}
+
+    
+
+
+.trip-section {
+    background: white; /* Background same as content to blend in */
+    border: 1px solid white; /* Border to match header style */
+    border-radius: 4px; /* Rounded corners */
+    padding: 20px;
+}
+
+/* Additional style for tab navigation */
+.trip-nav {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: flex-start; /* Align to the start of the container */
+    align-items: center; /* Center items vertically */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullet points if .trip-nav is a ul */
+}
+
+.trip-nav button {
+   
+
+    display: inline-block; /* Inline block level element */
+    padding: 10px 25px; /* Adequate padding around the text */
+    background-color: #8C52FF; /* White background */
+    color: white; /* Purple text color, as per your design */
+    text-decoration: none; /* No underline */
+    border-radius: 20px; /* Rounded edges */
+    border: none; /* Purple border to match the text color */
+    font-weight: bold; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.trip-nav button:focus {
+    outline: none; /* Optional: removes the focus outline */
+}
+
+.trip-nav button.active {
+    border-bottom: 2px solid #8517cf; /* Color for the active tab indicator */
+}
+
+.trip-nav li {
+    display: inline; /* Display list items inline */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.tablinks {
+    background: none;
+    border: none;
+    color: inherit; /* Inherit text color from parent */
+    padding: 8px 16px; /* Reduced padding to bring items closer */
+    margin: 0 10px 0 0; /* Right margin for spacing, remove left margin */
+    cursor: pointer;
+    font-size: inherit; /* Inherit font size from parent */
+    text-align: left; /* Align the text to the left */
+    border-bottom: 3px solid transparent; /* Add a transparent border for a consistent box size */
+}
+
+
+
+.tablinks.active {
+    color: white; /* Active tab link color */
+    border-bottom: 3px solid #8C52FF; /* Active tab indicator */
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    padding: 15px; /* Adjusts padding inside the card for better spacing */
+}
+
+.card-icon, .card-line {
+    margin-right: 10px; /* Space between the icon, line SVG, and the text */
+}
+
+.card-icon img, .card-line img {
+    width: 50px; /* Set a standard width for icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card-text {
+    flex: 1; /* Takes up the remaining space in the flex container */
+}
+
+/* Optional: Add more specific styles for buttons or additional text */
+.card-body .btn {
+    margin-top: 10px; /* Optional: add space above the button if it is below the text */
+}
+
+.btn-primary {
+   
+
+    display: inline-block; /* Inline block level element */
+    padding: 10px 25px; /* Adequate padding around the text */
+    background-color: white; /* White background */
+    color: #8C52FF; /* Purple text color, as per your design */
+    text-decoration: none; /* No underline */
+    border-radius: 20px; /* Rounded edges */
+    border: none; /* Purple border to match the text color */
+    font-weight: bold; /* Bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Additional styles for buttons, text, images, etc. */
+/* ... */
+>>>>>>> c6d842fb0664cfcd5850953375b7017ff54f1650
