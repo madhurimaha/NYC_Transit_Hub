@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <a href="home.html"><img src="/images/mta-svgrepo-com.svg" alt="MTA Logo" class="logo" width="100" height="100">
+        
+            </a>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class = "active">Explore</a></li>
+                    <li><a href="#">Plan Trip</a></li>
+                    <li><a href="#">Status</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="sidebar-btn" href="#">Settings</button>
+                <button class="sidebar-btn" href="#">Help & Support</button>
+            </div>
+        </aside>
+        <main class="content">
+            <header class="header">
+                Dashboard
+            </header>
+            <section class="main-info">
+                <div>
+                    <h1>Did you Hear about the new trains?</h1>
+                    <p>There are connected, so no more changing compartments. </p>
+                    <div class="main-info">
+                        <a href="#" class="learn-more-btn">Learn more</a>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="trip-section">
+                <!-- Navigation for different contents -->
+                <div class="trip-nav">
+                    <button class="tablinks active" onclick="openTrip(event, 'RecentTrips')">Nearby</button>
+                    <button class="tablinks" onclick="openTrip(event, 'Favorites')">Favorites</button>
+                    <button class="tablinks" onclick="openTrip(event, 'Nearby')">Recent Trips</button>
+                </div>
+                <div class="tab-content-container">
+
+                    <!-- Content for Recent Trips -->
+                    <div id="RecentTrips" class="tabcontent">
+                        <!-- Add your recent trips content here -->
+                    </div>
+                    
+                    <!-- Content for Favorites -->
+                    <div id="Favorites" class="tabcontent" style="display: none;">
+                        <!-- Add your favorite trips content here -->
+                    </div>
+                    
+                    <!-- Content for Nearby -->
+                    <div id="Nearby" class="tabcontent" style="display: none;">
+                        <!-- Add your nearby trips content here -->
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                .card-body {
+                    display: flex;
+                    align-items: center; /* Center items vertically */
+                    padding: 15px;
+                }
+        
+                .card-img-container {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 20px; /* Spacing between the icons and text */
+                }
+        
+                .card-icon {
+                    width: 50px; /* Set a standard width for the train icon */
+                    height: auto; /* Maintain aspect ratio */
+                }
+        
+                .card-line {
+                    width: 50px; /* Standard width for the line icon */
+                    height: auto; /* Maintain aspect ratio */
+                    margin-left: 10px; /* Space between train icon and line icon */
+                }
+        
+                .card-text {
+                    flex-grow: 1; /* Allow text to take the remaining space */
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="row">
+                    <!-- First row of cards -->
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-container">
+                                    <img class="card-icon" src="images/subway.svg" alt="Train Icon">
+                                    <img class="card-line" src="images/1-digit.svg" alt="Line Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Times Square–42nd Street</h5>
+                                    
+                                    <a href="#" class="btn btn-primary">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-container">
+                                    <img class="card-icon" src="images/subway.svg" alt="Train Icon">
+                                    <img class="card-line" src="images/2-digit.svg" alt="Line Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Times Square–42nd Street</h5>
+                                    
+                                    <a href="#" class="btn btn-primary">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-container">
+                                    <img class="card-icon" src="images/subway.svg" alt="Train Icon">
+                                    <img class="card-line" src="images/3-digit.svg" alt="Line Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Times Square–42nd Street</h5>
+                                    
+                                    <a href="#" class="btn btn-primary">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Second row of cards -->
+                    <!-- Card 4 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-container">
+                                    <img class="card-icon" src="images/subway.svg" alt="Train Icon">
+                                    <img class="card-line" src="images/7-digit.svg" alt="Line Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Times Square–42nd Street</h5>
+                                    
+                                    <a href="#" class="btn btn-primary">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-img-container">
+                                    <img class="card-icon" src="images/subway.svg" alt="Train Icon">
+                                    <img class="card-line" src="images/7d.svg" alt="Line Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Times Square–42nd Street</h5>
+                                   
+                                    <a href="#" class="btn btn-primary">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    
+                </div>
+            </div>
+            
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+            <script>
+                function openTrip(evt, tripName) {
+                    // Get all elements with class="tabcontent" and hide them
+                    var tabcontent = document.getElementsByClassName("tabcontent");
+                    for (var i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    var tablinks = document.getElementsByClassName("tablinks");
+                    for (var i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(tripName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script> 
+        </main>
+    </div>
+</body>
+</html>
