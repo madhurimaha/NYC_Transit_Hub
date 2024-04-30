@@ -1,0 +1,60 @@
+Feed Version: Unknown
+GTFS-to-HTML Version: 2.6.1
+Date Generated: Tue Apr 30 2024 15:39:00 GMT+0000 (Coordinated Universal Time)
+Timetable Page Count: 150
+Timetable Count: 150
+Calendar Service ID Count: 150
+Route Count: 150
+Trip Count: 20060
+Stop Count: 5536
+Source: /tmp/tmp-18674-ruCga9WYx0uJ/56bf6130-ab30-4453-bc1a-e36691e5981a-gtfs.zip
+
+Warnings:
+No trips found for route_id=Z, direction_id=0, service_ids=["Sunday"], timetable_id=Z|0000001|0
+No timetables found for timetable_page_id=Z|0000001|0
+No trips found for route_id=Z, direction_id=0, service_ids=["Saturday"], timetable_id=Z|0000010|0
+No timetables found for timetable_page_id=Z|0000010|0
+No trips found for route_id=Z, direction_id=1, service_ids=["Sunday"], timetable_id=Z|0000001|1
+No timetables found for timetable_page_id=Z|0000001|1
+No trips found for route_id=Z, direction_id=1, service_ids=["Saturday"], timetable_id=Z|0000010|1
+No timetables found for timetable_page_id=Z|0000010|1
+No trips found for route_id=W, direction_id=0, service_ids=["Sunday"], timetable_id=W|0000001|0
+No timetables found for timetable_page_id=W|0000001|0
+No trips found for route_id=W, direction_id=0, service_ids=["Saturday"], timetable_id=W|0000010|0
+No timetables found for timetable_page_id=W|0000010|0
+No trips found for route_id=W, direction_id=1, service_ids=["Sunday"], timetable_id=W|0000001|1
+No timetables found for timetable_page_id=W|0000001|1
+No trips found for route_id=W, direction_id=1, service_ids=["Saturday"], timetable_id=W|0000010|1
+No timetables found for timetable_page_id=W|0000010|1
+No trips found for route_id=FX, direction_id=1, service_ids=["Sunday"], timetable_id=FX|0000001|1
+No timetables found for timetable_page_id=FX|0000001|1
+No trips found for route_id=FX, direction_id=1, service_ids=["Saturday"], timetable_id=FX|0000010|1
+No timetables found for timetable_page_id=FX|0000010|1
+No trips found for route_id=FX, direction_id=0, service_ids=["Sunday"], timetable_id=FX|0000001|0
+No timetables found for timetable_page_id=FX|0000001|0
+No trips found for route_id=FX, direction_id=0, service_ids=["Saturday"], timetable_id=FX|0000010|0
+No timetables found for timetable_page_id=FX|0000010|0
+No trips found for route_id=B, direction_id=1, service_ids=["Sunday"], timetable_id=B|0000001|1
+No timetables found for timetable_page_id=B|0000001|1
+No trips found for route_id=B, direction_id=1, service_ids=["Saturday"], timetable_id=B|0000010|1
+No timetables found for timetable_page_id=B|0000010|1
+No trips found for route_id=B, direction_id=0, service_ids=["Sunday"], timetable_id=B|0000001|0
+No timetables found for timetable_page_id=B|0000001|0
+No trips found for route_id=B, direction_id=0, service_ids=["Saturday"], timetable_id=B|0000010|0
+No timetables found for timetable_page_id=B|0000010|0
+No trips found for route_id=7X, direction_id=0, service_ids=["Sunday"], timetable_id=7X|0000001|0
+No timetables found for timetable_page_id=7X|0000001|0
+No trips found for route_id=7X, direction_id=0, service_ids=["Saturday"], timetable_id=7X|0000010|0
+No timetables found for timetable_page_id=7X|0000010|0
+No trips found for route_id=7X, direction_id=1, service_ids=["Sunday"], timetable_id=7X|0000001|1
+No timetables found for timetable_page_id=7X|0000001|1
+No trips found for route_id=7X, direction_id=1, service_ids=["Saturday"], timetable_id=7X|0000010|1
+No timetables found for timetable_page_id=7X|0000010|1
+No trips found for route_id=6X, direction_id=0, service_ids=["Sunday"], timetable_id=6X|0000001|0
+No timetables found for timetable_page_id=6X|0000001|0
+No trips found for route_id=6X, direction_id=0, service_ids=["Saturday"], timetable_id=6X|0000010|0
+No timetables found for timetable_page_id=6X|0000010|0
+No trips found for route_id=6X, direction_id=1, service_ids=["Sunday"], timetable_id=6X|0000001|1
+No timetables found for timetable_page_id=6X|0000001|1
+No trips found for route_id=6X, direction_id=1, service_ids=["Saturday"], timetable_id=6X|0000010|1
+No timetables found for timetable_page_id=6X|0000010|1
