@@ -47,13 +47,22 @@ This project aims to **enhance user experience** by offering seamless, real-time
 🔹 MTA API  
 
 ---
+### 🏠 Home Screen
+![Home Page](home.png)
 
+### 🚆Transit Map
+![LMap](index.png)
+
+### 🛣️ Shortest Route Finder
+![Route Finder](react_route.png)
 
 Geospatial Data with PostgreSQL & PostGIS
+
 	•	Stores GTFS static data (routes, stops, schedules).
 	•	Handles real-time data (delays, vehicle positions, alerts).
 
 Data Integrity & Challenges
+
 	•	Ensuring Schema Consistency: Data from different transit agencies must match schema.
 	•	Batch Insertion Handling: Managing large data imports without breaking integrity.
 	•	Error Handling: Handling parsing errors for incorrect GTFS feeds.
